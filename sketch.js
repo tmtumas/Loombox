@@ -1,6 +1,6 @@
   let pnl_clicked = -1 // global variable to know if a light panel box has been clicked.
   
-  import { WLEDClient } from "wled-client.mjs";
+   //import { WLEDClient } from "wled-client.js";
   
   init();
 
@@ -19,7 +19,7 @@
   let bot_lt_box = [0.1,0.782,0.80,0.19];
   let def_col = 'rgb(112,240,106)';
 
-  const wled = new WLEDClient('192.168.4.101');
+ // const wled = new WLEDClient('192.168.4.101');
 
   async function init() {
 	const wled = new WLEDClient('192.168.4.101')
@@ -183,7 +183,7 @@ function draw() {
      if (fnd_ix>-1) {pnl_clicked = fnd_ix}
       console.log(ij, fnd_ix)
     }    
-    //console.log(ij,my_pnls_str[ij].x1,my_pnls_str[ij].x2)
+    console.log(ij,my_pnls_str[ij].x1,my_pnls_str[ij].x2)
   
      
     //lt_pnl_clicked = chk_lt_pnls_2(lgt_pnl,mouseX,mouseY);
